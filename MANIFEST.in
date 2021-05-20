@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include estv_suissetax_fx *.css
+recursive-include estv_suissetax_fx *.csv
+recursive-include estv_suissetax_fx *.html
+recursive-include estv_suissetax_fx *.ico
+recursive-include estv_suissetax_fx *.js
+recursive-include estv_suissetax_fx *.json
+recursive-include estv_suissetax_fx *.md
+recursive-include estv_suissetax_fx *.png
+recursive-include estv_suissetax_fx *.py
+recursive-include estv_suissetax_fx *.svg
+recursive-include estv_suissetax_fx *.txt
+recursive-exclude estv_suissetax_fx *.pyc
