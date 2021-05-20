@@ -104,10 +104,10 @@ app_license = "MIT"
 
 scheduler_events = {
     "daily": [
-        "estv_suissetax_fx.tasks.daily"
+        "estv_suissetax_fx.cron.run_daily"
     ],
     "monthly": [
-        "estv_suissetax_fx.tasks.monthly"
+        "estv_suissetax_fx.cron.run_daily"
     ]
 }
 
