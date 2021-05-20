@@ -102,23 +102,14 @@ app_license = "MIT"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"estv_suissetax_fx.tasks.all"
-# 	],
-# 	"daily": [
-# 		"estv_suissetax_fx.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"estv_suissetax_fx.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"estv_suissetax_fx.tasks.weekly"
-# 	]
-# 	"monthly": [
-# 		"estv_suissetax_fx.tasks.monthly"
-# 	]
-# }
+scheduler_events = {
+    "daily": [
+        "estv_suissetax_fx.tasks.daily"
+    ],
+    "monthly": [
+        "estv_suissetax_fx.tasks.monthly"
+    ]
+}
 
 # Testing
 # -------
@@ -142,4 +133,3 @@ app_license = "MIT"
 # exempt linked doctypes from being automatically cancelled
 #
 # auto_cancel_exempted_doctypes = ["Auto Repeat"]
-
