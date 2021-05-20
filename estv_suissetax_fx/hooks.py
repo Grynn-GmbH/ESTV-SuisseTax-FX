@@ -107,7 +107,7 @@ scheduler_events = {
         "estv_suissetax_fx.cron.run_daily"
     ],
     "monthly": [
-        "estv_suissetax_fx.cron.run_daily"
+        "estv_suissetax_fx.cron.run_monthly"
     ]
 }
 
