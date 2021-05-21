@@ -2,9 +2,9 @@ import frappe
 from .util import xml_to_currency_exchange
 
 
-def restore():
+def restore(doc=None, event=None):
     currencies = xml_to_currency_exchange()
-    dict
+    print(currencies)
 
 
 def run_daily():
