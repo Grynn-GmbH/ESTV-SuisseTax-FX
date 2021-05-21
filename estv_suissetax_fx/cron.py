@@ -1,10 +1,10 @@
 import frappe
-import requests
+from .util import xml_to_currency_exchange
 
 
 def restore():
-    frappe.log('runn successfully')
-    frappe.error_log('this is Error')
+    currencies = xml_to_currency_exchange()
+    dict
 
 
 def run_daily():
@@ -13,3 +13,6 @@ def run_daily():
 
 def run_monthly():
     restore()
+
+
+restore()
