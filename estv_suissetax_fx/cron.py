@@ -1,6 +1,5 @@
-from importlib.machinery import DEBUG_BYTECODE_SUFFIXES
 import frappe
-from frappe import DuplicateEntryError, DoesNotExistError
+from frappe import DuplicateEntryError, DoesNotExistError, enqueue
 from .util import xml_to_currency_exchange
 from datetime import datetime
 
@@ -26,7 +25,9 @@ def restore(doc=None, event=None):
     rates = {currency['name'].lower(
     ): currencies.get(currency['name'].lower()) for currency in enabled_currencies}
     rates.pop('chf', None)
-    create_FX_entry('USD', 1.90)
+    for currency, rate in rates.items():
+        arg = {'currency': currency.upper(), 'rate': rate}
+        enqueue('estv_suissetax_fx.cron.create_FX_entry', **arg)
 
 
 def run_daily():
