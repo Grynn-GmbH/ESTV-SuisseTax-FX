@@ -91,11 +91,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-doc_events = {
-    "Sales Invoice": {
-        "before_save": "estv_suissetax_fx.cron.restore",
-    }
-}
+# doc_events = {
+#     "Sales Invoice": {
+#         "before_save": "estv_suissetax_fx.cron.restore",
+#     }
+# }
 
 # Scheduled Tasks
 # ---------------
