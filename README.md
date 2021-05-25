@@ -1,4 +1,4 @@
-## Estv Suissetax Fx
+## ESTV SuisseTax FX
 
 Sync Your FX Rates
 
