@@ -4,4 +4,4 @@ Sync Your FX Rates
 
 #### License
 
-MIT
+GPLV3
